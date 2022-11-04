@@ -1,0 +1,26 @@
+@import './vars';
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+button {
+   cursor: pointer;
+   border: none;
+   border-radius: 0;
+}
+
+.app {
+   height: 100vh;
+   width: 100vw;
+   max-height: 100vh;
+   background-color: $bgc;
+}
+
+.header {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+}

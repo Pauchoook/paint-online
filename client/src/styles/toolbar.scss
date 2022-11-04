@@ -1,0 +1,56 @@
+@import './vars';
+
+.toolbar {
+   padding: 8px 20px;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid black;
+   &__btn {
+      width: 25px;
+      height: 25px;
+      margin-right: 15px;
+      &.brush {
+         background: url('../assets/img/brush.png') center / contain no-repeat;
+      }
+      &.rect {
+         background: url('../assets/img/rect.png') center / contain no-repeat;
+      }
+      &.circle {
+         background: url('../assets/img/circle.png') center / contain no-repeat;
+      }
+      &.eraser {
+         background: url('../assets/img/eraser.png') center / contain no-repeat;
+      }
+      &.line {
+         background: url('../assets/img/line.png') center / contain no-repeat;         
+      }
+      &.undo {
+         margin-left: auto;
+         background: url('../assets/img/undo.png') center / contain no-repeat;         
+      }
+      &.redo {
+         background: url('../assets/img/redo.png') center / contain no-repeat;         
+      }
+      &.save {
+         background: url('../assets/img/save.png') center / contain no-repeat;         
+      }
+   }
+   &__color {
+      position: relative;
+      overflow: hidden;
+      width: 25px;
+      height: 25px;
+      background: url('../assets/img/color.png') center / contain no-repeat;  
+      &--input {
+         position: absolute;
+         cursor: pointer;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         opacity: 0;
+         z-index: 10;
+      }
+   }
+}
